@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MD Shihab Babu | Sociologist & Researcher</title>
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,700;1,400;1,700&family=Plus+Jakarta+Sans:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Plus Jakarta Sans', 'sans-serif'],
+                        serif: ['Lora', 'serif'],
+                    },
+                    colors: {
+                        mint: {
+                            50: '#f0fdfa',
+                            100: '#ccfbf1',
+                            500: '#14b8a6',
+                            600: '#0d9488',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        html { scroll-behavior: smooth; }
+        .reveal { opacity: 0; transform: translateY(30px); transition: all 1s ease-out; }
+        .reveal.active { opacity: 1; transform: translateY(0); }
+        .expanded-content { max-height: 0; opacity: 0; overflow: hidden; transition: all 0.5s ease-in-out; }
+        .expanded-content.open { max-height: 1000px; opacity: 1; margin-top: 1.5rem; padding-top: 1.5rem; border-top: 1px solid rgba(20, 184, 166, 0.1); }
+    </style>
+</head>
+<body class="bg-[#fcfcf9] text-[#1e293b] font-sans selection:bg-mint-100">
+
+    <!-- Background Decoration -->
+    <div class="fixed inset-0 z-0 overflow-hidden pointer-events-none">
+        <div class="absolute top-[-10%] right-[-10%] w-[50%] h-[50%] bg-mint-500/5 blur-[120px] rounded-full"></div>
+        <div class="absolute bottom-[-10%] left-[-10%] w-[50%] h-[50%] bg-indigo-500/5 blur-[120px] rounded-full"></div>
+    </div>
+
+    <!-- Navigation -->
+    <nav id="navbar" class="fixed top-0 w-full z-50 transition-all duration-500 py-10">
+        <div class="max-w-[1400px] mx-auto px-10 flex justify-between items-center">
+            <div class="flex items-center gap-4 group cursor-pointer">
+                <div class="w-10 h-10 bg-mint-600 rounded-lg flex items-center justify-center font-black shadow-lg shadow-mint-600/20 text-white transition-transform group-hover:rotate-6">SB</div>
+                <div class="flex flex-col">
+                    <span class="text-xl font-black tracking-tighter uppercase leading-none text-slate-900">Shihab Babu</span>
+                    <span class="text-[9px] font-bold uppercase tracking-[0.4em] text-mint-600">Researcher</span>
+                </div>
+            </div>
+            <div class="hidden lg:flex items-center gap-12 text-[10px] font-black uppercase tracking-[0.3em] text-slate-400">
+                <a href="#framework" class="hover:text-mint-600 transition-colors">Expertise</a>
+                <a href="#log" class="hover:text-mint-600 transition-colors">Field Log</a>
+                <a href="#academy" class="hover:text-mint-600 transition-colors">Academy</a>
+                <a href="mailto:mdshihab.001001@gmail.com" class="px-8 py-2.5 bg-mint-600 text-white rounded-full hover:bg-mint-700 transition-all shadow-md shadow-mint-600/20">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <main class="relative z-10">
+        <!-- Hero Section -->
+        <section id="home" class="min-h-screen flex flex-col justify-center px-10 pt-40 max-w-[1400px] mx-auto">
+            <div class="reveal">
+                <p class="text-mint-600 font-black uppercase tracking-[0.5em] text-sm mb-8 flex items-center gap-4">
+                    <span class="h-[2px] w-12 bg-mint-500"></span> University of Chittagong
+                </p>
+                <h1 class="text-[12vw] lg:text-[14rem] font-black leading-[0.75] tracking-tighter text-slate-900 select-none">
+                    SHIHAB<br />BABU<span class="text-mint-500 italic">.</span>
+                </h1>
+                
+                <div class="mt-20 max-w-5xl space-y-12">
+                    <h2 class="text-4xl md:text-6xl lg:text-7xl font-serif italic text-slate-800 leading-[1.2] tracking-tight">
+                        "Sociology is the art of <span class="text-mint-600 not-italic font-black">listening</span> 
+                        to narratives; Research is the science of making them <span class="text-slate-900 not-italic font-black underline decoration-mint-500/30">indisputable</span>."
+                    </h2>
+                    
+                    <div class="flex flex-wrap items-center gap-12 pt-8">
+                        <a href="#log" class="group flex items-center gap-6 px-12 py-6 bg-slate-900 text-white font-black text-xs uppercase tracking-[0.2em] rounded-2xl transition-all shadow-xl hover:bg-mint-600 hover:scale-105">
+                            Explore Projects 
+                        </a>
+                        <p class="text-xl md:text-2xl text-slate-500 font-light italic max-w-xl border-l-4 border-mint-500/20 pl-10">
+                            Leading complex field operations for <span class="text-slate-900 font-bold not-italic">UNICEF & World Vision.</span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Partner Banner -->
+        <section class="py-20 border-y border-mint-600/5 bg-white shadow-sm mt-20">
+            <div class="max-w-[1400px] mx-auto px-10">
+               <div class="grid grid-cols-2 lg:grid-cols-6 gap-10 items-center justify-center opacity-40 grayscale hover:grayscale-0 hover:opacity-100 transition-all duration-700">
+                 <span class="text-xl font-black text-slate-900 text-center">UNICEF</span>
+                 <span class="text-xl font-black text-slate-900 text-center">WATER AID</span>
+                 <span class="text-xl font-black text-slate-900 text-center">WORLD VISION</span>
+                 <span class="text-xl font-black text-slate-900 text-center">SAVE THE CHILDREN</span>
+                 <span class="text-xl font-black text-slate-900 text-center">YPSA</span>
+                 <span class="text-xl font-black text-slate-900 text-center">GAOTEK</span>
+               </div>
+            </div>
+        </section>
+
+        <!-- Field Log (Click to Expand) -->
+        <section id="log" class="py-40 px-10 bg-slate-50 border-y border-mint-600/5">
+            <div class="max-w-[1400px] mx-auto">
+                <div class="reveal mb-32">
+                    <h2 class="text-[11px] font-black text-mint-600 uppercase tracking-[0.5em] mb-4">Project Archive</h2>
+                    <h3 class="text-6xl md:text-8xl font-black text-slate-900 tracking-tighter italic">The Field Log.</h3>
+                </div>
+
+                <div class="space-y-6">
+                    <!-- Project 1 -->
+                    <div class="reveal project-card bg-white border border-slate-200 rounded-[3rem] p-10 md:p-16 hover:border-mint-500/40 transition-all cursor-pointer shadow-sm hover:shadow-xl" onclick="toggleProject(this)">
+                        <div class="flex flex-col md:flex-row items-center justify-between gap-12">
+                            <div class="flex items-center gap-12">
+                                <span class="text-2xl font-mono font-bold text-slate-300">01</span>
+                                <div>
+                                    <h4 class="text-3xl md:text-5xl font-black tracking-tighter text-slate-900">WASH for Urban Poor</h4>
+                                    <p class="text-xs font-bold uppercase tracking-widest mt-3 text-slate-400">Water Aid | DSK</p>
+                                </div>
+                            </div>
+                            <span class="text-xs font-black uppercase text-slate-400">2026</span>
+                        </div>
+                        <div class="expanded-content">
+                            <div class="grid lg:grid-cols-2 gap-12">
+                                <p class="text-2xl font-serif italic text-slate-600 leading-relaxed">"Responsible for both Qualitative and Quantitative Data collection in slum areas of Chittagong City Corporation."</p>
+                                <div class="bg-slate-50 p-8 rounded-3xl border border-slate-100">
+                                    <p class="text-[10px] font-black text-mint-600 uppercase mb-4">Impact</p>
+                                    <p class="text-slate-600 italic">Clinical demographic mapping and WASH infrastructure assessment in urban environments.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 2 -->
+                    <div class="reveal project-card bg-white border border-slate-200 rounded-[3rem] p-10 md:p-16 hover:border-mint-500/40 transition-all cursor-pointer shadow-sm hover:shadow-xl" onclick="toggleProject(this)">
+                        <div class="flex flex-col md:flex-row items-center justify-between gap-12">
+                            <div class="flex items-center gap-12">
+                                <span class="text-2xl font-mono font-bold text-slate-300">02</span>
+                                <div>
+                                    <h4 class="text-3xl md:text-5xl font-black tracking-tighter text-slate-900">AHP IV Project</h4>
+                                    <p class="text-xs font-bold uppercase tracking-widest mt-3 text-slate-400">Save The Children | YPSA</p>
+                                </div>
+                            </div>
+                            <span class="text-xs font-black uppercase text-slate-400">2025</span>
+                        </div>
+                        <div class="expanded-content">
+                            <div class="grid lg:grid-cols-2 gap-12">
+                                <p class="text-2xl font-serif italic text-slate-600 leading-relaxed">"Team Supervisor of Quantitative Data Collection team for Australia's foreign ministry funded project."</p>
+                                <div class="bg-slate-50 p-8 rounded-3xl border border-slate-100">
+                                    <p class="text-[10px] font-black text-mint-600 uppercase mb-4">Impact</p>
+                                    <p class="text-slate-600 italic">High-integrity data gathering across Rohingya Camp and Host Community populations.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <p class="text-center mt-20 text-slate-400 italic">...and 10+ additional field missions documented.</p>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="py-60 px-10 text-center bg-white">
+            <div class="reveal max-w-5xl mx-auto">
+                <h2 class="text-7xl md:text-[12rem] font-black text-slate-900 tracking-tighter mb-20 italic leading-none">Let's connect<span class="text-mint-500">.</span></h2>
+                <a href="mailto:mdshihab.001001@gmail.com" class="text-3xl md:text-7xl font-black text-mint-600 hover:text-slate-900 transition-all underline decoration-slate-900/5 underline-offset-[24px] hover:decoration-mint-500">
+                    mdshihab.001001@gmail.com
+                </a>
+                <div class="mt-40 text-slate-400 font-mono text-sm uppercase tracking-[0.6em] flex items-center justify-center gap-4">
+                    <span class="w-12 h-[1px] bg-slate-200"></span> Chittagong, Bangladesh
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script>
+        // Scroll Reveal Logic
+        const reveals = document.querySelectorAll('.reveal');
+        const handleScroll = () => {
+            reveals.forEach(el => {
+                const rect = el.getBoundingClientRect();
+                if (rect.top < window.innerHeight * 0.85) {
+                    el.classList.add('active');
+                }
+            });
+
+            const nav = document.getElementById('navbar');
+            if (window.scrollY > 50) {
+                nav.classList.add('bg-white/90', 'backdrop-blur-2xl', 'py-4', 'border-b', 'shadow-sm');
+                nav.classList.remove('py-10');
+            } else {
+                nav.classList.remove('bg-white/90', 'backdrop-blur-2xl', 'py-4', 'border-b', 'shadow-sm');
+                nav.classList.add('py-10');
+            }
+        };
+
+        window.addEventListener('scroll', handleScroll);
+        handleScroll();
+
+        // Project Toggle Logic
+        function toggleProject(card) {
+            const content = card.querySelector('.expanded-content');
+            const isOpen = content.classList.contains('open');
+            
+            // Close all first
+            document.querySelectorAll('.expanded-content').forEach(el => el.classList.remove('open'));
+            
+            if (!isOpen) {
+                content.classList.add('open');
+            }
+        }
+    </script>
+</body>
+</html>
